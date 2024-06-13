@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUBES ROCK</title>
+    <link rel="icon" href="/img/logo.webp">
+    <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- BARRA DE NAVEGACIÓN -->
+        <nav class="navbar">
+
+            <div class="logo-contenedor">
+                <a href="https://www.yubes.com.ar/">
+                    <img src="img/logo.webp" alt="Logo de la banda" class="logo">
+                    <span class="nombreBanda">YUBES</span>
+                </a>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#shows">SHOWS</a></li>
+                <li><a href="#banda">BANDA</a></li>
+                <li><a href="#discografia">DISCOGRAFÍA</a></li>
+                <li><a href="#galeria">GALERÍA</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+
+            <ul id="redes">
+                <li>
+                    <a href="https://open.spotify.com/intl-es/artist/2OqJjWVsq21Gwfm8qjJd7u" target="_blank">
+                        <img class="social-logo" src="img/Spotify.svg" alt="spotify">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/@yubesrock" target="_blank">
+                        <img class="social-logo" src="img/Youtube.svg" alt="youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/yubesrock/" target="_blank">
+                        <img class="social-logo" src="img/Instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/YUBESRock" target="_blank">
+                        <img class="social-logo" src="img/Facebook.svg" alt="facebook">
+                    </a>
+                </li>
+            </ul>
+
+            <div class="marquesina-contenedor">
+                <div class="marquesina">
+                    <p>¡Seguinos en nuestras redes y enterate de todo!</p>
+                </div>
+            </div>
+
+            <div class="navbar-icon" id="navbarBoton">
+                <img id="navbarImg" src="img/menu.svg" alt="navbar">
+            </div>
+
+            <div class="navbar-responsive" id="navbarResponsive">
+                <ul class="navlist-responsive">
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#shows">SHOWS</a></li>
+                    <li><a href="#banda">BANDA</a></li>
+                    <li><a href="#discografia">DISCOGRAFÍA</a></li>
+                    <li><a href="#galeria">GALERÍA</a></li>
+                    <li><a href="#contacto">CONTACTO</a></li>
+                </ul>
+                <ul class="redes-responsive">
+                    <li>
+                        <a href="https://open.spotify.com/intl-es/artist/2OqJjWVsq21Gwfm8qjJd7u" target="_blank">
+                            <img class="social-logo" src="img/Spotify.svg" alt="spotify">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/@yubesrock" target="_blank">
+                            <img class="social-logo" src="img/Youtube.svg" alt="youtube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yubesrock/" target="_blank">
+                            <img class="social-logo" src="img/Instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/YUBESRock" target="_blank">
+                            <img class="social-logo" src="img/Facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PÁGINA 1 'INICIO'-->
+        <section id="inicio" data-script="inicio.js">
+            <div class="video-container">
+                <video autoplay muted loop playsinline class="background-video">
+                    <!--"playsinline" es para darle autoplay a dispositivos iOS-->
+                    <source src="videos/videoInicio8Mb.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="contenido">
+                <h2 class="animatedReproductor" id="player-title">¡Dale PLAY y disfrutá de Yubes!</h2>
+
+                <div id="song-info">
+                    <p id="song-title"></p>
+                </div>
+
+                <div class="audio-controls">
+                    <button id="previousButton">
+                        <img src="img/fast_rewind.svg" alt="Cancion Previa">
+                    </button>
+                    <button id="playPauseButton">
+                        <img id="playPauseIcon" src="img/play_circle.svg" alt="Reproducir">
+                    </button>
+                    <button id="nextButton">
+                        <img src="img/fast_forward.svg" alt="Siguiente Cancion">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 2 'SHOWS'-->
+        <section id="shows" data-script="shows.js">
+            <div class="showsContainer">
+                <div class="dosPalabras">
+                    <h1 class="tituloPintado">PRÓXIMOS</h1>
+                    <h1>SHOWS</h1>
+                </div>
+
+                <div class="proximosShows">
+                    <div class="show-info">
+                        <div class="fecha">
+                            <h2 class="añoFecha">2024</h2>
+                            <div class="fecha-diaMes">
+                                <h1 class="diaFecha">07</h1>
+                                <h2 class="mesFecha">JUNIO</h2>
+                            </div>
+                        </div>
+                        <div class="detalleFecha">
+                            <h2 class="tituloPintado">Bienvenidos al bosque</h2>
+                            <h2>Casa de la Cultura - Sala 2</h2>
+                            <h3>9 de Julio 1043 | Gral. Roca R.N.</h3>
+                            <h3>Viernes 7 de Junio | 21:00hs</h3>
+                        </div>
+                    </div>
+
+                    <div class="botonYubes">
+                        <a href="https://www.instagram.com/yubesrock/" target="_blank">
+                            <h4>CONSEGUÍ TU ENTRADA ➝</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 3 'BANDA'-->
+        <section id="banda" data-script="banda.js">
+
+            <div class="banda-content">
+                <div class="dosPalabras">
+                    <h1 class="tituloPintado">NUESTRA</h1>
+                    <h1>BANDA</h1>
+                </div>
+
+                <p>
+                    Desde el corazón de la Patagonia nace <b>Yubes</b>, fundada en el año 2018 por Adriano
+                    'Tano' Pagliacci y Martín 'Marcho' Del Río. Nos caracterizamos por ser una banda
+                    independiente de Rock ‘fusión’, atravesando diferentes estilos como Rock, Pop,
+                    Disco, Funk, Reggae, entre otros. En 2024 presentamos nuestro primer disco doble
+                    ‘Un viaje de ida’ compuesto por 18 canciones divididas en dos discos digitales:
+                    ‘Destino A’ y ‘Destino B’, los mismos se encuentran disponibles en todas las redes
+                    sociales y de difusión.
+                    <br>
+                    <br>
+                    Desde el mismo amor que nos impulsa a construir este viaje
+                    al que llamamos <b>Yubes</b>, los invitamos a todos a acompañarnos y ser parte de esto que recién
+                    comienza.
+                </p>
+
+            </div>
+
+            <div class="contenedorTarjetas">
+                <div class="tarjetas">
+                    <div class="imagenMauri">
+                        <div class="detalle">
+                            <h3 class="tituloTarjeta">Mauricio Poblete</h3>
+                            <h4 class="contenidoTarjeta">Bateria</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="imagenMarcho">
+                        <div class="detalle">
+                            <h3 class="tituloTarjeta">Martin 'Marcho' del Rio</h3>
+                            <h4 class="contenidoTarjeta">Guitarra</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="imagenTano">
+                        <div class="detalle">
+                            <h3 class="tituloTarjeta">Adriano 'Tano' Pagliacci</h3>
+                            <h4 class="contenidoTarjeta">Voz y Guitarra</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="imagenFede">
+                        <div class="detalle">
+                            <h3 class="tituloTarjeta">Federico Peche</h3>
+                            <h4 class="contenidoTarjeta">Bajo</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="imagenPablo">
+                        <div class="detalle">
+                            <h3 class="tituloTarjeta">Pablo Garces</h3>
+                            <h4 class="contenidoTarjeta">Teclado</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PÁGINA 4 'DISCOGRAFIA'-->
+        <section id="discografia" data-script="discografia.js">
+            <h1>DISCOGRAFÍA</h1>
+            <div class="discos">
+                <div class="disco">
+                    <a href="https://open.spotify.com/album/1J7EEjvk4WpI7pUazFO6Ee" target="_blank">
+                        <div class="imagen" id="disco1" style="background-image: url('img/destinoA.webp');"></div>
+                        <div class="menu" id="menu1">
+                            <p class="pMenu"><strong>01- Bailando entre las nubes</strong></p>
+                            <p class="pMenu"><strong>02- El espectador</strong></p>
+                            <p class="pMenu"><strong>03- Robotizado</strong></p>
+                            <p class="pMenu"><strong>04- No pares de brillar</strong></p>
+                            <p class="pMenu"><strong>05- Llevame</strong></p>
+                            <p class="pMenu"><strong>06- Pecho Frio</strong></p>
+                            <p class="pMenu"><strong>07- Sueños</strong></p>
+                            <p class="pMenu"><strong>08- En el fondo del bar</strong></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="disco">
+                    <a href="https://open.spotify.com/intl-es/album/2xDcMNr4xA2bGOUxJMXZ2E" target="_blank">
+                        <div class="imagen" id="disco2" style="background-image: url('img/destinoB.webp');"
+                            id="imagen2"></div>
+                        <div class="menu" id="menu2">
+                            <p class="pMenu"><strong>01- Meditare</strong></p>
+                            <p class="pMenu"><strong>02- De reojo</strong></p>
+                            <p class="pMenu"><strong>03- Toxicar</strong></p>
+                            <p class="pMenu"><strong>04- La maquina del tiempo</strong></p>
+                            <p class="pMenu"><strong>05- Loveland</strong></p>
+                            <p class="pMenu"><strong>06- Vendedor de ilusiones</strong></p>
+                            <p class="pMenu"><strong>07- Rutero</strong></p>
+                            <p class="pMenu"><strong>08- Portuguesa</strong></p>
+                            <p class="pMenu"><strong>09- Naufragio</strong></p>
+                            <p class="pMenu"><strong>10- Es tarde</strong></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <ul id="redes-discografia">
+                <li>
+                    <a href="https://open.spotify.com/intl-es/artist/2OqJjWVsq21Gwfm8qjJd7u" target="_blank">
+                        <img class="social-logo-discografia" src="img/Spotify.svg" alt="spotify">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.youtube.com/@yubesrock" target="_blank">
+                        <img class="social-logo-discografia" src="img/Youtube.svg" alt="youtube">
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- PÁGINA 4.5 'VIDEOS'-->
+        <div id="youtube">
+            <div class="youtube-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HwWjmEEh_OA?si=yxVtjcs2yc7F3A1L"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <div class="video-info-container">
+                    <h2>VIDEOCLIPS</h2>
+                    <div class="video-info">
+                        <div class="video-info-description">
+                            <h3>Fiesta Nacional De La Manzana - 2023</h3>
+                            <h4>Domingo 26 de Febrero, 2023. Escenario regionales.</h4>
+                        </div>
+                        <div class="botonYubes">
+                            <a href="https://www.youtube.com/@yubesrock" target="_blank">
+                                <h4>VER MÁS VIDEOS ➝</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PÁGINA 5 'GALERIA'-->
+        <section id="galeria" data-script="galleria.js">
+
+            <div class="galeria-title">
+                <h1>GALERÍA</h1>
+                <p>Aún estamos trabajando en esta sección. <br><br> ¡Visitá nuestro Instagram y enterate de todo!</p>
+                <div class="botonYubes">
+                    <a href="https://www.instagram.com/yubesrock/" target="_blank">
+                        <h4>VER NOVEDADES ➝</h4>
+                    </a>
+                </div>
+            </div>
+            <!--
+            <div class="galeria-content">
+                <div class="carrusel-container shows">
+                    <ul class="carrusel">
+                        <li><img src="img/shows/1.webp" alt="show"></li>
+                        <li><img src="img/shows/2.webp" alt="show"></li>
+                        <li><img src="img/shows/3.webp" alt="show"></li>
+                        <li><img src="img/shows/4.webp" alt="show"></li>
+                        <li><img src="img/shows/5.webp" alt="show"></li>
+                        <li><img src="img/shows/6.webp" alt="show"></li>
+                        <li><img src="img/shows/11.webp" alt="show"></li>
+                        <li><img src="img/shows/12.webp" alt="show"></li>
+                        <li><img src="img/shows/13.webp" alt="show"></li>
+                        <li><img src="img/shows/14.webp" alt="show"></li>
+                        <li><img src="img/shows/15.webp" alt="show"></li>
+                        <li><img src="img/shows/16.webp" alt="show"></li>
+                        <li><img src="img/shows/17.webp" alt="show"></li>
+                        <li><img src="img/shows/19.webp" alt="show"></li>
+                        <li><img src="img/shows/20.webp" alt="show"></li>
+                        <li><img src="img/shows/21.webp" alt="show"></li>
+                    </ul>
+                </div>
+
+                <div class="carrusel-container produccion">
+                    <ul class="carrusel">
+                        <li><img src="img/produccion/1.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/2.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/3.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/4.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/5.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/6.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/7.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/8.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/9.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/10.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/11.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/12.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/13.webp" alt="produccion"></li>
+                        <li><img src="img/produccion/14.webp" alt="produccion"></li>
+                    </ul>
+                </div>
+
+                <div class="carrusel-container intimidad">
+                    <ul class="carrusel">
+                        <li><img src="img/intimidad/1.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/2.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/3.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/4.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/5.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/6.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/7.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/8.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/9.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/10.webp" alt="intimidad"></li>
+                        <li><img src="img/intimidad/11.webp" alt="intimidad"></li>
+                    </ul>
+                </div>
+
+                Contenedor para videos o boton para INSTAGRAM
+            <div class="carrusel-container mas">
+                <ul class="carrusel">
+                </ul>
+            </div>
+
+
+            <ul class="seccionesCarrusel">
+                <li id="pestañaShows">
+                    <h2>SHOWS</h2>
+                </li>
+                <li id="pestañaProduccion">
+                    <h2>PRODUCCIÓN</h2>
+                </li>
+                <li id="pestañaIntimidad">
+                    <h2>INTIMIDAD</h2>
+                </li>
+                <li id="pestañaMas">
+                    <a href="https://www.instagram.com/yubesrock/" target="_blank">
+                        <h2>MÁS</h2>
+                    </a>
+                </li>
+            </ul>
+            </div>-->
+        </section>
+
+        <!-- PÁGINA 6 'CONTACTO'-->
+        <section id="contacto" data-script="contacto.js">
+            <div class="left"></div>
+            <div class="right">
+                <div id="form">
+                    <h1>CONTACTANOS</h1>
+                    <form id="formularioContacto" method="post">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="telefono" name="telefono" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <button type="submit" id="enviarBtn">
+                            <h4>ENVIAR ➝</h4>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="redes-contact">
+                    <h4>SEGUINOS EN:</h4>
+                    <ul class="logos-contact">
+                        <li>
+                            <a href="https://open.spotify.com/intl-es/artist/2OqJjWVsq21Gwfm8qjJd7u" target="_blank">
+                                <img class="social-logo contact" src="img/Spotify.svg" alt="spotify">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@yubesrock" target="_blank">
+                                <img class="social-logo contact" src="img/Youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/yubesrock/" target="_blank">
+                                <img class="social-logo contact" src="img/Instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/YUBESRock" target="_blank">
+                                <img class="social-logo contact" src="img/Facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                </div>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--COLUMNA IZQUIERDA-->
+        <section class="footer-left">
+            <h4>DESARROLLADORES</h4>
+            <div class="dev-container">
+                <div class="dev">
+                    <a href="https://www.linkedin.com/in/federicopch/" target="_blank">
+                        <img src="img/Linkedin.svg" alt="linkedin">
+                    </a>
+                    <h4>Federico Peche</h4>
+                    <h5>Full-Stack Dev</h5>
+                </div>
+                <div class="dev">
+                    <a href="https://www.linkedin.com/in/lucasnrodriguez/" target="_blank">
+                        <img src="img/Linkedin.svg" alt="linkedin">
+                    </a>
+                    <h4>Lucas Rodriguez</h4>
+                    <h5>UX Engineer</h5>
+                </div>
+            </div>
+        </section>
+
+        <!--COLUMNA DERECHA-->
+        <section class="footer-right">
+            <p>© 2024 YUBES ROCK - Todos los derechos reservados</p>
+        </section>
+    </footer>
+    <script src="js/inicio.js"></script>
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/highlight.js"></script>
+    <script src="js/galeria.js"></script>
+    <script src="js/youtubeSection.js" async></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
